@@ -34,10 +34,27 @@ function mouseClickMiddle(pos = {x:0, y:0}, delay = 100, smooth = false) {
     clickMouse('middle', pos, delay, smooth);
 }
 
+function getMousePos() {
+    return robot.getMousePos();
+}
+
+function moveMouse(pos = {x:0, y:0}, smooth = false) {
+    if(smooth) {
+        robot.moveMouseSmooth(pos.x, pos.y);
+    } else robot.moveMouse(pos.x, pos.y);
+}
+
+function setMouseDelay(ms) {
+    robot.setMouseDelay(ms);
+}
+
 module.exports = {
     mouseClickLeft,
     mouseClickRight,
-    mouseClickMiddle
+    mouseClickMiddle,
+    getMousePos,
+    moveMouse,
+    setMouseDelay
 }
 
 

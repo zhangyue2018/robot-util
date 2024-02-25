@@ -1,5 +1,7 @@
-var mouseClick = require('./mouse');
+var mouseClick = require('./Mouse');
+var screenHandle = require('./Screen');
 
 module.exports = {
-    ...mouseClick
+    ...mouseClick,
+    ...screenHandle
 }
