@@ -5,7 +5,9 @@ function getPosColor(pos = {x:0, y:0}) {
     return robot.getPixelColor(pos.x, pos.y);
 }
 
-
+function getScreenSize() {
+    return robot.getScreenSize();
+}
 
 
 
@@ -14,6 +16,7 @@ function getPosColor(pos = {x:0, y:0}) {
 
 
 module.exports = {
-    getPosColor
+    getPosColor,
+    getScreenSize
 }
 

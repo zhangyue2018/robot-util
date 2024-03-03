@@ -42,7 +42,9 @@ var robot = require('./index');
 
 // robot.moveMouse({x: 688, y:98});
 
-// var pos = robot.getMousePos();
-// console.log('---mouse--pos:', pos);
+var pos = robot.getMousePos();
+console.log('---mouse--pos:', pos);
+var screenSize = robot.getScreenSize();
+// console.log('---screenSize---', screenSize);
 // var posColor = robot.getPosColor(pos);
 // console.log('---pos color:', posColor);
