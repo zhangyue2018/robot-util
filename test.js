@@ -44,7 +44,9 @@ var robot = require('./index');
 
 var pos = robot.getMousePos();
 console.log('---mouse--pos:', pos);
-var screenSize = robot.getScreenSize();
+// var screenSize = robot.getScreenSize();
 // console.log('---screenSize---', screenSize);
 // var posColor = robot.getPosColor(pos);
 // console.log('---pos color:', posColor);
+
+robot.typeStringTo({x: 2321, y: 549}, 'hello');

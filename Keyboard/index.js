@@ -10,8 +10,18 @@ async function typeStringTo(pos = {x: 0, y:0}, string = '') {
     robot.typeString(string);
 }
 
+function keyTap(keyStr = 'enter') {
+    robot.keyTap(keyStr);
+}
+
+function setKeyboardDelay(ms) {
+    robot.setKeyboardDelay(ms);
+}
+
 
 module.exports = {
-    typeStringTo
+    typeStringTo,
+    keyTap,
+    setKeyboardDelay
 }
 
