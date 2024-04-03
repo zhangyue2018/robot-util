@@ -49,4 +49,4 @@ console.log('---mouse--pos:', pos);
 // var posColor = robot.getPosColor(pos);
 // console.log('---pos color:', posColor);
 
-robot.typeStringTo({x: 2321, y: 549}, 'hello');
+// robot.typeStringTo({x: 2321, y: 549}, 'hello');
